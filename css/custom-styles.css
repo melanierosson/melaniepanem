@@ -1,0 +1,616 @@
+.pink-text {
+	color:#FF0093;
+}
+.pink-lt-text {
+	color:#fb85c9;
+}
+.cyan-text {
+	color:#00E2FF;
+}
+.cyan-lt-text {
+	color:#93f3ff;
+}
+.yellow-text {
+	color:#FBFE3B;
+}
+.yellow-lt-text {
+	color:#fcfbae;
+}
+.yellow-overline {
+	text-decoration: overline;
+	text-decoration-color:#FBFE3B;
+	text-decoration-thickness: 4px;
+}
+.yellow-overline:hover {
+	cursor: default !important;
+}
+.pink-bg {
+	background-color:#FF0093;
+}
+.cyan-bg {
+	background-color:#00E2FF;
+}
+.yellow-bg {
+	background-color:#FBFE3B;
+}
+.dark-bg {
+	background-color:#333;
+}
+
+.hero-subline {
+	line-height: 2rem;
+	padding-top: 1rem;
+}
+
+.hero-subline .hero-subline-1 {
+	font-weight: 400;
+}
+
+.hero-subline .hero-subline-2 {
+	font-weight: 300;
+	font-size: 80%;
+}
+
+.btn {
+  /*font-variant: small-caps;*/
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+}
+
+.icon-src {
+	font-size: 50%;
+}
+
+.headshot {
+	width: 320px;
+	max-width: 90vw;
+	clip-path: circle(160px at center);
+}
+
+.lead {
+	padding-top: 1rem;
+}
+
+.white-text {
+	color:white;
+}
+.white-text:hover {
+	color:white;
+}
+.dark-text, a.dark-text {
+	color:rgb(33, 37, 41);
+}
+.dark-text:hover, a.dark-text:hover {
+	color:rgb(33, 37, 41);
+}
+
+.mpowheard-link img {
+	width: 60px;
+	height: 60px;
+	clip-path: circle(30px at center);
+}
+.social-btn.github svg {
+	transform:scale(1.10);
+}
+.social-btn:hover svg, .social-btn:hover img{
+	transform:scale(1.08);
+}
+.social-btn.github:hover svg {
+	transform:scale(1.18);
+}
+.service-icon:hover {
+	cursor:default !important;
+}
+
+.portfolio-item.karinderya .caption .h2 {
+	color: #fb85c9;
+	text-shadow: 0 0 8px #333;
+}
+.portfolio-item.mpowheard .caption .h2, .portfolio-item.bce .caption .h2 {
+	color: #fb85c9;
+	text-shadow: 0 0 8px #333;
+}
+.portfolio-item.linkedinlearning .caption .h2 {
+	color: #fb85c9;
+	text-shadow: 0 0 8px #333;
+}
+/*.portfolio-item.karinderya:hover .caption-content {
+color: #333;
+}
+.portfolio-item.mpowheard:hover .caption-content, .portfolio-item.bce:hover .caption-content {
+color: #333;
+}
+.portfolio-item.linkedinlearning:hover .caption-content {
+color: #333;
+}*/
+
+
+
+/*.personal-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+.personal-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.65);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.personal-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
+.personal-item .caption .caption-content h2, .personal-item .caption .caption-content .h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.personal-item .caption .caption-content p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+@media (min-width: 992px) {
+  .personal-item {
+    max-width: none;
+    margin: 0;
+  }
+  .personal-item .caption {
+    transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, background-color 0.7s;
+    transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(0px);
+            clip-path: inset(0px);
+  }
+  .personal-item .caption .caption-content {
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .personal-item img {
+    transition: -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+            clip-path: inset(-1px);
+  }
+  .personal-item:hover img {
+    -webkit-clip-path: inset(2rem);
+            clip-path: inset(2rem);
+  }
+  .personal-item:hover .caption {
+    background-color: rgba(25, 25, 25, 0.9);
+    -webkit-clip-path: inset(2rem);
+            clip-path: inset(2rem);
+  }
+}*/
+
+/* ANIMATIONS */
+/******** SASS VARIABLES **********/
+/* Light Background Link Colors */
+/* Dark Background Link Colors */
+/*********** ANIMATIONS *************/
+@media screen and (min-width: 991px) {
+	.ltbg-link:hover,
+  .ltbg-link.color {
+		animation: ltbgAnim 0.3s 1;
+		cursor: pointer;
+	}
+}
+
+@media screen and (min-width: 991px) {
+	.dkbg-link:hover,
+  .dkbg-link.color {
+		animation: dkbgAnim 0.3s 1;
+		cursor: pointer;
+	}
+}
+
+span.ltbg-anim {
+	animation: ltbgAnim 0.3s 1;
+}
+
+span.ltbg-anim:hover {
+	animation: ltbgAnim 0.3s 1;
+}
+
+@keyframes dkbgAnim {
+	0% {
+		color: #FD7CA9;
+	}
+
+	15% {
+		color: #FF9147;
+	}
+
+	25% {
+		color: #FFEA00;
+	}
+
+	40% {
+		color: #00FFFF;
+	}
+
+	60% {
+		color: #52FF69;
+	}
+
+	75% {
+		color: #52ABFF;
+	}
+
+	85% {
+		color: #C78FFF;
+	}
+
+	100% {
+		color: #FFFFFF;
+	}
+}
+
+@keyframes ltbgAnim {
+	0% {
+		color: #0052CC;
+	}
+
+	15% {
+		color: #E30041;
+	}
+
+	25% {
+		color: #FF5100;
+	}
+
+	40% {
+		color: #00A0A3;
+	}
+
+	60% {
+		color: #00A616;
+	}
+
+	75% {
+		color: #0022FF;
+	}
+
+	85% {
+		color: #6600CC;
+	}
+
+	100% {
+		color: #FFFFFF;
+	}
+}
+
+@keyframes ltbgAnimMobile {
+	0% {
+		color: #0052CC;
+	}
+
+	5% {
+		color: #E30041;
+	}
+
+	10% {
+		color: #FF5100;
+	}
+
+	15% {
+		color: #00A0A3;
+	}
+
+	30% {
+		color: #00A616;
+	}
+
+	35% {
+		color: #0022FF;
+	}
+
+	40% {
+		color: #6600CC;
+	}
+
+	45% {
+		color: #FFFFFF;
+	}
+
+	50% {
+		color: #343a40;
+	}
+
+	100% {
+		color: #343a40;
+	}
+}
+
+/*********** Mobile Links ***********/
+/* mobile name line animates without user interaction */
+@media (hover: none) and (pointer: coarse) {
+	.name-line span.ltbg-link {
+		animation: ltbgAnimMobile 1s infinite;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.name-line span.ltbg-link {
+		animation: ltbgAnimMobile 1s infinite;
+	}
+}
+
+/********** Desktop Links ***********/
+@media screen and (min-width: 992px) {
+  /* desktop has link colors animate and transition randomly on hover */
+  @	keyframes ltbgAnimPink {
+		0% {
+      color: #777;
+	}
+
+	30% {
+		color: #00A616;
+	}
+
+	100% {
+		color: #E30041;
+	}
+}
+
+.ltbg-link.pink:hover {
+	animation: ltbgAnimPink 1s 1;
+	color: #E30041 !important;
+}
+
+@keyframes ltbgAnimOrange {
+	0% {
+		color: #777;
+	}
+
+	30% {
+		color: #0052CC;
+	}
+
+	100% {
+		color: #FF5100;
+	}
+}
+
+.ltbg-link.orange:hover {
+	animation: ltbgAnimOrange 1s 1;
+	color: #FF5100 !important;
+}
+
+@keyframes ltbgAnimTeal {
+	0% {
+		color: #777;
+	}
+
+	30% {
+		color: #0022FF;
+	}
+
+	100% {
+		color: #00A0A3;
+	}
+}
+
+.ltbg-link.teal:hover {
+	animation: ltbgAnimTeal 1s 1;
+	color: #00A0A3 !important;
+}
+
+@keyframes ltbgAnimGreen {
+	0% {
+		color: #777;
+	}
+
+	30% {
+		color: #6600CC;
+	}
+
+	100% {
+		color: #00A616;
+	}
+}
+
+.ltbg-link.green:hover {
+	animation: ltbgAnimGreen 1s 1;
+	color: #00A616 !important;
+}
+
+@keyframes ltbgAnimRylblue {
+	0% {
+		color: #777;
+	}
+
+	30% {
+		color: #E30041;
+	}
+
+	100% {
+		color: #0022FF;
+	}
+}
+
+.ltbg-link.rylblue:hover {
+	animation: ltbgAnimRylblue 1s 1;
+	color: #0022FF !important;
+}
+
+@keyframes ltbgAnimBlue {
+	0% {
+		color: #777;
+	}
+
+	30% {
+		color: #FF5100;
+	}
+
+	100% {
+		color: #0052CC;
+	}
+}
+
+.ltbg-link.blue:hover {
+	animation: ltbgAnimBlue 1s 1;
+	color: #0052CC !important;
+}
+
+@keyframes ltbgAnimPurple {
+	0% {
+		color: #777;
+	}
+
+	30% {
+		color: #00A0A3;
+	}
+
+	100% {
+		color: #6600CC;
+	}
+}
+
+.ltbg-link.purple:hover {
+	animation: ltbgAnimPurple 1s 1;
+	color: #6600CC !important;
+}
+
+@keyframes dkbgAnimPink {
+	0% {
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	30% {
+		color: #FFEA00;
+	}
+
+	100% {
+		color: #FD7CA9;
+	}
+}
+
+.dkbg-link.pink:hover {
+	animation: dkbgAnimPink 1s 1;
+	color: #FD7CA9 !important;
+}
+
+@keyframes dkbgAnimOrange {
+	0% {
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	30% {
+		color: #C78FFF;
+	}
+
+	100% {
+		color: #FF9147;
+	}
+}
+
+.dkbg-link.orange:hover {
+	animation: dkbgAnimOrange 1s 1;
+	color: #FF9147 !important;
+}
+
+@keyframes dkbgAnimTeal {
+	0% {
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	30% {
+		color: #FD7CA9;
+	}
+
+	100% {
+		color: #00FFFF;
+	}
+}
+
+.dkbg-link.teal:hover {
+	animation: dkbgAnimTeal 1s 1;
+	color: #00FFFF !important;
+}
+
+@keyframes dkbgAnimYellow {
+	0% {
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	30% {
+		color: #52ABFF;
+	}
+
+	100% {
+		color: #FFEA00;
+	}
+}
+
+.dkbg-link.yellow:hover {
+	animation: dkbgAnimYellow 1s 1;
+	color: #FFEA00 !important;
+}
+
+@keyframes dkbgAnimGreen {
+	0% {
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	30% {
+		color: #FF9147;
+	}
+
+	100% {
+		color: #52FF69;
+	}
+}
+
+.dkbg-link.green:hover {
+	animation: dkbgAnimGreen 1s 1;
+	color: #52FF69 !important;
+}
+
+@keyframes dkbgAnimBlue {
+	0% {
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	30% {
+		color: #52FF69;
+	}
+
+	100% {
+		color: #52ABFF;
+	}
+}
+
+.dkbg-link.blue:hover {
+	animation: dkbgAnimBlue 1s 1;
+	color: #52ABFF !important;
+}
+
+@keyframes dkbgAnimPurple {
+	0% {
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	30% {
+		color: #00FFFF;
+	}
+
+	100% {
+		color: #C78FFF;
+	}
+}
+
+.dkbg-link.purple:hover {
+	animation: dkbgAnimPurple 1s 1;
+	color: #C78FFF !important;
+} }
+
+/**********************************/
