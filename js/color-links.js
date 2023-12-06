@@ -5,6 +5,7 @@ var dkbgBorder = document.querySelectorAll('.dkbg-border'), k;
 var imgsAll = document.querySelectorAll('img');
 var ltbgAll = document.querySelectorAll('.ltbg-link');
 var dkbgAll = document.querySelectorAll('.dkbg-link');
+var hoverTrgtAll = document.querySelectorAll('.hover-target');
 var portfDescrAll = document.querySelectorAll('div.portfolio-descr');
 // const dkbgClassList = ['pink', 'orange', 'teal', 'green', 'yellow', 'blue', 'purple'];
 // const ltbgClassList = ['purple', 'blue', 'pink', 'rylblue', 'orange', 'teal', 'green'];
@@ -12,16 +13,16 @@ var portfDescrAll = document.querySelectorAll('div.portfolio-descr');
 // let ltbgColorClass = "";
 
 
-const saturateImgs = () => {
-	[].forEach.call(imgsAll, el => {
-		el.classList.add("saturate");
-	})
-}
-const saturatePrtfDescr = () => {
-	[].forEach.call(portfDescrAll, el => {
-		el.classList.add("saturate");
-	})
-}
+// const saturateImgs = () => {
+// 	[].forEach.call(imgsAll, el => {
+// 		el.classList.add("saturate");
+// 	})
+// }
+// const saturatePrtfDescr = () => {
+// 	[].forEach.call(portfDescrAll, el => {
+// 		el.classList.add("saturate");
+// 	})
+// }
 const colorLtBgLinks = () => {
 	[].forEach.call(ltbgAll, el => {
 		el.classList.add("color");
@@ -32,22 +33,29 @@ const colorDkBgLinks = () => {
 		el.classList.add("color");
 	})
 }
+const hoverTargets = () => {
+	[].forEach.call(hoverTrgtAll, el => {
+		el.classList.add("color");
+	})
+}
+
 const saturateAll = () => {
-	saturateImgs();
-	saturatePrtfDescr();
+	// saturateImgs();
+	// saturatePrtfDescr();
 	colorLtBgLinks();
 	colorDkBgLinks();
+	// colorHoverTargets();
 }
-const desaturateImgs = () => {
-	[].forEach.call(imgsAll, el => {
-		el.classList.remove("saturate");
-	})
-}
-const desaturatePrtfDescr = () => {
-	[].forEach.call(portfDescrAll, el => {
-		el.classList.remove("saturate");
-	})
-}
+// const desaturateImgs = () => {
+// 	[].forEach.call(imgsAll, el => {
+// 		el.classList.remove("saturate");
+// 	})
+// }
+// const desaturatePrtfDescr = () => {
+// 	[].forEach.call(portfDescrAll, el => {
+// 		el.classList.remove("saturate");
+// 	})
+// }
 const decolorLtBgLinks = () => {
 	[].forEach.call(ltbgAll, el => {
 		el.classList.remove("color");
@@ -58,24 +66,30 @@ const decolorDkBgLinks = () => {
 		el.classList.remove("color");
 	})
 }
+const decolorHoverTargets = () => {
+	[].forEach.call(hoverTrgtAll, el => {
+		el.classList.remove("color");
+	})
+}
 const desaturateAll = () => {
-	desaturateImgs();
-	desaturatePrtfDescr();
+	// desaturateImgs();
+	// desaturatePrtfDescr();
 	decolorLtBgLinks();
 	decolorDkBgLinks();
+	// decolorHoverTargets();
 }
-const hoverPrtfDescr = () => {
-	[].forEach.call(portfDescrAll, el => {
-		el.addEventListener("mouseover", saturateAll);
-		el.addEventListener("mouseout", desaturateAll);
-	})
-}
-const hoverImgs = () => {
-	[].forEach.call(imgsAll, el => {
-		el.addEventListener("mouseover", saturateAll);
-		el.addEventListener("mouseout", desaturateAll);
-	})
-}
+// const hoverPrtfDescr = () => {
+// 	[].forEach.call(portfDescrAll, el => {
+// 		el.addEventListener("mouseover", saturateAll);
+// 		el.addEventListener("mouseout", desaturateAll);
+// 	})
+// }
+// const hoverImgs = () => {
+// 	[].forEach.call(imgsAll, el => {
+// 		el.addEventListener("mouseover", saturateAll);
+// 		el.addEventListener("mouseout", desaturateAll);
+// 	})
+// }
 const hoverLtBg = () => {
 	[].forEach.call(ltbgAll, el => {
 		el.addEventListener("mouseover", saturateAll);
@@ -88,12 +102,19 @@ const hoverDkBg = () => {
 		el.addEventListener("mouseout", desaturateAll);
 	})
 }
+const hoverTarget = () => {
+	[].forEach.call(hoverTrgtAll, el => {
+		el.addEventListener("mouseover", saturateAll);
+		el.addEventListener("mouseout", desaturateAll);
+	})
+}
 
 window.addEventListener("load", function () {
-	hoverPrtfDescr();
-	hoverImgs();
+	// hoverPrtfDescr();
+	// hoverImgs();
 	hoverLtBg();
 	hoverDkBg();
+	hoverTarget();
 });
 
 // plan it

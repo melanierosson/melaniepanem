@@ -1,0 +1,305 @@
+<!-- Combined w/ 1 Product -->
+<style type="text/css">
+.product-card {
+	width:100px;
+	height:110px;
+	border-radius:12px;
+	border: 1px solid #EFEFF2;
+	padding:0;
+	margin-left:10px;
+	margin-right:10px;
+	background-color:white;
+}
+.product-card:hover {
+	transform: translate(0,-4px);
+	cursor: pointer;
+}
+.product-card.simplifi:hover {
+/* 	background-color:rgba(193, 220, 247, 0.15); */
+	filter: drop-shadow(0 0 10px #5ebfea88);
+}
+.product-card.premier:hover {
+	background-color:rgba(247, 72, 82, 0.05);
+}
+.card-top {
+	margin:0;
+	width:100%;
+	border-radius:12px 12px 0 0;
+	height:13px;
+}
+.card-content {
+	padding:10px 4px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-content:center;
+	align-items:center;
+}
+.card-content img {
+	margin-left:auto;
+	margin-right:auto;
+}
+.card-top.simplifi {
+	background-color: #2C35FF;
+}
+.card-top.premier {
+	background-color: #C60C30;
+}
+.new-price {
+	font-weight:700;
+	font-size:28px;
+}
+.new-price sup {
+	top:-0.62em;
+}
+.new-price sup small {
+	font-size:12px;
+}
+.suffix {
+	font-size:11px;
+	margin-left:-5px;
+}
+.cta {
+	padding:6px 22px;
+	margin-left:10px;
+	margin-right:10px;
+	border-radius:40px;
+	font-size:14px;
+	font-weight:600;
+	margin-top:10px;
+}
+.desktop-img {
+	display:inline;
+}
+.mobile-img-1, .mobile-img-2 {
+	display:none;
+}
+.mobile-img-1 img, .mobile-img-2 img {
+	max-width:150px;
+}
+@media screen and (max-width:575px) {
+	.cta {
+		font-size:12px;
+	}
+	.desktop-img {
+		display:none;
+	}
+	.mobile-img-1, .mobile-img-2 {
+		display:inline;
+	}
+}
+.cta:hover {
+	cursor:pointer;
+}
+.cta.simplifi {
+	background-color:#2C35FF;
+	color:#FFF;
+	border:2px solid #FFF;
+}
+.cta.simplifi:hover {
+	background-color:#FFF;
+	color:#2C35FF;
+	border:2px solid #2C35FF;
+}
+.cta.premier {
+	background-color:#C60C30;
+	color:#FFF;
+	border:2px solid #FFF;
+}
+.cta.premier:hover {
+	background-color:#FFF;
+	color:#C60C30;
+	border:2px solid #C60C30;
+}
+</style>
+
+<div class="container" style="margin:-16px 0 0 0 !important;padding:0 !important;text-align:center;">
+	<div class="col-12">
+	<p style="font-size:105%;"><a href="/blog/quicken-product-highlights-may-2022"><span style="font-weight:600;">Spending Categories</span> feature</a></p>
+	</div>
+<div class="row" style="display:flex;justify-content:center;">
+<div class="col-6">
+	<a href="#" class="desktop-img">
+		<img class="spendingPieChart" alt="Animated user interface for the spending by categories feature" src="https://qa.simplifimoney.com/blog/wp-content/uploads/2022/10/FeatureAnim-SpendingCategoriesPieChart.gif" style="width:100%;max-width:360px;max-height:205px; margin: 0 0 2.5rem 0;" />
+	</a>
+	<a href="#" class="mobile-img-1">
+		<img class="spendingPieChart" src="https://qa.simplifimoney.com/blog/wp-content/uploads/2022/11/spendingpiechart-anim-solo.gif" style="z-index:3"/>
+	</a>
+	<a href="#" class="mobile-img-2">
+		<img class="spendingPieChart"  style="margin-top:-30px;z-index:0" src="https://qa.simplifimoney.com/blog/wp-content/uploads/2022/11/spendingpiechart-key-solo-e1668040920258.png"/>
+	</a>
+</div>
+<div class="col-6" style="padding-left:0;padding-right:0;display:flex;flex-direction:column;justify-content:center;align-items:center;align-content:center;height:250px;">
+	<p>This is in:</p>
+	<div class="product-card simplifi">
+		<div class="card-top simplifi">
+		</div>
+		<div class="card-content simplifi" onclick="window.open('https://www.simplifimoney.com/')">
+			<img src="https://www.quicken.com/sites/all/themes/custom/quicken_2014/images/svg/simplifi-logo.svg" style="max-width:71px;"/>
+			<div class="pricing">
+				<span class="new-price">$3<sup><small>99</small></sup></span>
+                <span class="suffix">/mo*</span>
+			</div>
+		</div>
+	</div>
+	<div class="cta simplifi" onclick="location.reload();location.href='https://www.quicken.com/shoppingcart?addproduct=170313'">
+		Buy Now
+	</div>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- Spending Categories Shortcode -->
+
+<div class="container" style="margin:-16px 0 0 0 !important;padding:0 !important;">
+<div class="col-12" style="padding-left:0;padding-right:0;display:flex;flex-direction:column;justify-content:center;align-items:center;align-content:center;height:100%;">
+
+	
+<p style="font-size:105%;"><a href="/blog/quicken-product-highlights-may-2022"><span style="font-weight:600;">Spending Categories</span> feature</a></p>
+<a href="/blog/quicken-product-highlights-may-2022">
+	<img id="spendingPieChart" alt="Animated user interface for the spending by categories feature" src="https://qa.simplifimoney.com/blog/wp-content/uploads/2022/10/FeatureAnim-SpendingCategoriesPieChart.gif" style="width:100%;max-width:360px;max-height:205px; margin: 0 0 2.5rem 0;" />
+</a>
+</div>
+</div>
+
+
+
+<!-- Product Cards Shortcode -->
+
+<style type="text/css">
+.product-card {
+	width:100px;
+	height:110px;
+	border-radius:12px;
+	border: 1px solid #EFEFF2;
+	padding:0;
+	margin-left:10px;
+	margin-right:10px;
+}
+.product-card:hover {
+	transform: translate(0,-4px);
+	cursor: pointer;
+}
+.product-card.simplifi:hover {
+	background-color:rgba(193, 220, 247, 0.15);
+}
+.product-card.premier:hover {
+	background-color:rgba(247, 72, 82, 0.05);
+}
+.card-top {
+	margin:0;
+	width:100%;
+	border-radius:12px 12px 0 0;
+	height:13px;
+}
+.card-content {
+	padding:10px 4px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-content:center;
+	align-items:center;
+}
+.card-content img {
+	margin-left:auto;
+	margin-right:auto;
+}
+.card-top.simplifi {
+	background-color: #2C35FF;
+}
+.card-top.premier {
+	background-color: #C60C30;
+}
+.new-price {
+	font-weight:700;
+	font-size:28px;
+}
+.new-price sup {
+	top:-0.62em;
+}
+.new-price sup small {
+	font-size:12px;
+}
+.suffix {
+	font-size:11px;
+	margin-left:-5px;
+}
+.cta {
+	padding:6px 22px;
+	margin-left:10px;
+	margin-right:10px;
+	border-radius:40px;
+	font-size:14px;
+	font-weight:600;
+	margin-top:10px;
+}
+.cta:hover {
+	cursor:pointer;
+}
+.cta.simplifi {
+	background-color:#2C35FF;
+	color:#FFF;
+	border:2px solid #FFF;
+}
+.cta.simplifi:hover {
+	background-color:#FFF;
+	color:#2C35FF;
+	border:2px solid #2C35FF;
+}
+.cta.premier {
+	background-color:#C60C30;
+	color:#FFF;
+	border:2px solid #FFF;
+}
+.cta.premier:hover {
+	background-color:#FFF;
+	color:#C60C30;
+	border:2px solid #C60C30;
+}
+</style>
+
+<div class="container" style="margin:0 !important;padding:0 !important;">
+<div class="col-12" style="padding-left:0;padding-right:0;display:flex;flex-direction:column;justify-content:center;align-items:center;align-content:center;height:100%;">
+
+	
+<p>This is in:</p>
+
+<div class="row" style="display:flex;flex-direction:row;justify-content:center;">
+	<div class="product-card simplifi">
+		<div class="card-top simplifi">
+		</div>
+		<div class="card-content simplifi" onclick="window.open('https://www.simplifimoney.com/')">
+			<img src="https://www.quicken.com/sites/all/themes/custom/quicken_2014/images/svg/simplifi-logo.svg" style="max-width:71px;"/>
+			<div class="pricing">
+				<span class="new-price">$3<sup><small>99</small></sup></span>
+                <span class="suffix">/mo*</span>
+			</div>
+		</div>
+	</div>
+	<div class="product-card premier" onclick="window.open('https://www.quicken.com/personal-finance/quicken-premier-windows')">
+		<div class="card-top premier">
+		</div>
+		<div class="card-content premier">
+			<img src="https://qa.simplifimoney.com/blog/wp-content/uploads/2022/10/premier.svg" style="margin-right:-6px"/>
+			<div class="pricing">
+				<span class="new-price">$6<sup><small>99</small></sup></span>
+                <span class="suffix">/mo*</span>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<div class="row" style="display:flex;flex-direction:row;justify-content:center;">
+	<div class="cta simplifi" onclick="location.reload();location.href='https://www.quicken.com/shoppingcart?addproduct=170313'">
+		Buy Now
+	</div>
+	<div class="cta premier" onclick="location.reload();location.href='https://www.quicken.com/shoppingcart?addproduct=170164'">
+		Buy Now
+	</div>
+</div>
+	
+</div>
+</div>

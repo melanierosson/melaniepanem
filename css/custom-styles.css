@@ -102,6 +102,30 @@
 	cursor:default !important;
 }
 
+blockquote {
+	color:#777;
+}
+.shade {
+	filter:drop-shadow(0 0 10px #DDD);
+}
+
+.portfolio-container {
+	max-width:1200px;
+	margin:auto;
+	padding-right:20px;
+	padding-left:20px;
+}
+.portfolio-container a:link, .portfolio-container a:visited, .portfolio-container a:active {
+	text-decoration: none;
+}
+.portfolio-container hr {
+	margin-top:40px;
+	margin-bottom:40px;
+}
+.portfolio-container .fit-img {
+	width:100%;
+}
+
 .portfolio-item.karinderya .caption .h2 {
 	color: #fb85c9;
 	text-shadow: 0 0 8px #333;
@@ -123,6 +147,22 @@ color: #333;
 .portfolio-item.linkedinlearning:hover .caption-content {
 color: #333;
 }*/
+
+.more-projects {
+	display:flex;
+	justify-content:center;
+}
+.more-projects div {
+	opacity:0.5;
+}
+.more-projects div:hover {
+	opacity:1;
+}
+.portfolio-container a:link, 
+.portfolio-container a:visited,
+.portfolio-container a:active {
+	color:#5F888C;
+}
 
 
 
@@ -196,21 +236,34 @@ color: #333;
 /* Light Background Link Colors */
 /* Dark Background Link Colors */
 /*********** ANIMATIONS *************/
-@media screen and (min-width: 991px) {
-	.ltbg-link:hover,
-  .ltbg-link.color {
-		animation: ltbgAnim 0.3s 1;
-		cursor: pointer;
+@media screen and (max-width: 990px) {
+	h1.name-line span#name-line-1.anim {
+		animation: ltbgAnimMobile 0.5s infinite;
+	}
+	h1.name-line span#name-line-2.anim {
+		animation: ltbgAnimMobile 0.5s infinite;
 	}
 }
 
-@media screen and (min-width: 991px) {
-	.dkbg-link:hover,
-  .dkbg-link.color {
-		animation: dkbgAnim 0.3s 1;
-		cursor: pointer;
-	}
+.hover-target:hover>.ltbg-link,
+.hover-target:hover>a.portfolio-item>div.caption>div.caption-content>div.ltbg-link,
+.ltbg-link:hover,
+.ltbg-link.color {
+	animation: ltbgAnim 0.3s 1;
+	cursor: pointer;
 }
+.char:hover {
+	animation: ltbgAnim 0.3s 1;
+	transform: translate(0,5px);
+}
+
+.hover-target:hover>.dkbg-link,
+.dkbg-link:hover,
+.dkbg-link.color {
+	animation: dkbgAnim 0.3s 1;
+	cursor: pointer;
+}
+
 
 span.ltbg-anim {
 	animation: ltbgAnim 0.3s 1;
@@ -293,40 +346,36 @@ span.ltbg-anim:hover {
 		color: #0052CC;
 	}
 
-	5% {
+	4% {
 		color: #E30041;
 	}
 
-	10% {
+	8% {
 		color: #FF5100;
 	}
 
-	15% {
+	12% {
 		color: #00A0A3;
 	}
 
-	30% {
+	16% {
 		color: #00A616;
 	}
 
-	35% {
+	20% {
 		color: #0022FF;
 	}
 
-	40% {
+	24% {
 		color: #6600CC;
 	}
 
-	45% {
-		color: #FFFFFF;
-	}
-
-	50% {
-		color: #343a40;
+	28% {
+		color: #212529;
 	}
 
 	100% {
-		color: #343a40;
+		color: #212529;
 	}
 }
 

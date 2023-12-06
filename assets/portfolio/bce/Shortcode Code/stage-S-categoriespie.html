@@ -1,0 +1,224 @@
+<!-- Simplifi Spending Categories Pie Chart - Shortcode -->
+
+<script type="text/javascript" 
+src="https://www.quicken.com/sites/all/libraries/qknpricing.js">
+</script>
+
+<style type="text/css">
+/* MAIN CONTAINERS */
+div.shortcode-frame {
+	margin:-16px 0 0 0 !important;
+	padding:0 !important;
+	text-align:center !important;
+}
+div.row.mainanim-row {
+	display:flex;
+	justify-content:center;
+}
+div.thisisin-container {
+	padding-left:0;
+	padding-right:0;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+	height:250px;
+}
+
+
+/* ANIMATION IMAGES */
+.desktop-img img.spendingPieChart {
+	width:100%;
+	max-width:360px;
+	max-height:184px; 
+	margin: 1.5rem 0 2.5rem 0;
+}
+.desktop-img {
+	display:inline;
+}
+.mobile-img-3, .mobile-img-4 {
+	display:none;
+}
+.mobile-img-3 img, .mobile-img-4 img {
+	max-width:120px;
+}
+@media screen and (max-width:575px) {
+	.desktop-img {
+		display:none;
+	}
+	span.mobile-img-3, span.mobile-img-4 {
+		display:inline;
+	}
+}
+
+
+/* PRODUCT CARDS */
+.product-card {
+	width:100px;
+	height:110px;
+	border-radius:12px;
+	border: 1px solid #EFEFF2;
+	padding:0;
+	margin-left:10px;
+	margin-right:10px;
+	background-color:white;
+}
+.product-card.simplifi:hover {
+	transform: translate(0,-2px);
+	cursor: pointer;
+	/*filter: drop-shadow(0 0 10px #5ebfea88);*/
+	filter: drop-shadow(0 0 10px #77777744);
+}
+.card-top {
+	margin:0;
+	width:100%;
+	border-radius:12px 12px 0 0;
+	height:13px;
+}
+.card-content {
+	padding:10px 4px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-content:center;
+	align-items:center;
+}
+.card-content img {
+	margin-left:auto;
+	margin-right:auto;
+}
+.percentage {
+	background-color: #F74852;
+    border-radius: 5px;
+    font-size: 11.2px;
+    text-align: center;
+    line-height: 14.4px;
+    position: absolute;
+    z-index: 6;
+    color: #FFF;
+    margin-top: -8px;
+    width: 71px;
+    margin-left: 14px;
+    margin-right: 14px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-family: "Poppins";
+}
+.pricing {
+	margin-top:-3px;
+}
+.full-price {
+	color:#FB7F79;
+	text-decoration:line-through;
+	font-size:11.2px;
+	font-family:"Poppins";
+	margin-bottom: -10px;
+    margin-top: -5px;
+    font-weight: 600;
+	text-align:left !important;
+}
+.cents {
+	margin-left:-6px;
+	position: relative;
+    top: -1em;
+    font-size: 45%;
+}
+.hidden-price {
+	display:none;
+}
+.card-top.simplifi {
+	background-color: #2C35FF;
+}
+.new-price {
+	font-weight:700;
+	font-size:28px;
+}
+.new-price sup {
+	top:-0.62em;
+}
+.new-price sup small {
+	font-size:12px;
+}
+.suffix {
+	font-size:11px;
+	margin-left:-5px;
+}
+.cta {
+	padding:6px 22px;
+	margin-left:10px;
+	margin-right:10px;
+	border-radius:40px;
+	font-size:14px;
+	font-weight:600;
+	margin-top:10px;
+	min-width:109px;
+}
+.cta:hover {
+	cursor:pointer;
+}
+.cta.simplifi {
+	background-color:#2C35FF;
+	color:#FFF;
+	border:2px solid #FFF;
+}
+.cta.simplifi:hover {
+	background-color:#FFF;
+	color:#2C35FF;
+	border:2px solid #2C35FF;
+}
+@media screen and (max-width:575px) {
+	.cta {
+		font-size:12px;
+	}
+}
+.billed {
+	font-size:11px;
+}
+</style>
+
+<div class="container shortcode-frame" style="padding:0 !important">
+	<div class="col-12">
+		<p style="font-size:105%;"><a href="https://stage.quicken.com/simplifi/features/all-finances-in-one-place" style="color:#2C35FF;"><span style="font-weight:600;">Spending Categories</span> feature</a></p>
+	</div>
+	<div class="row mainanim-row">
+		<div class="col-6 shortanim-container">
+			<span class="desktop-img">
+				<img class="spendingPieChart" alt="Animated user interface for the spending by categories feature" src="https://www.quicken.com/blog/wp-content/uploads/2022/12/FeatureAnim-SpendingCategoriesPieChart-SimplifiBranding.gif" />
+			</span>
+			<span class="mobile-img-3">
+				<img class="spendingPieChart" src="https://www.quicken.com/blog/wp-content/uploads/2022/12/FeatureAnim-SpendingCategoriesPieChart-SimplifiBranding-Solo.gif" style="z-index:3" alt="spending pie chart"/>
+			<br/></span>
+			<span class="mobile-img-4">
+				<img class="spendingPieChart"  style="margin-top:-20px;z-index:0" src="https://www.quicken.com/blog/wp-content/uploads/2022/12/FeatureAnim-SpendingCategoriesPieChart-SimplifiBranding-Key.png" alt="spending pie chart key"/>
+			</span>
+		</div>
+		<div class="col-6 thisisin-container">
+			<p class="thisisin" style="margin-top:-40px;margin-bottom:7px;">This is in:</p>
+			<div class="product-card simplifi">
+				<div class="discount-top">
+					<!-- discount badge -->
+					<span class="percentage hidden-price" data-qkn-sku="170313" data-qkn-type="percent">&nbsp;</span>
+				</div>
+				<div class="card-top simplifi">
+					<!-- card top color -->
+				</div>
+				<div class="card-content simplifi" onclick="window.open('https://stage.quicken.com/personal-finance/quicken-simplifi?icid=202302|blog|simplifi|bce')">
+					<img src="https://www.quicken.com/sites/all/themes/custom/quicken_2014/images/svg/simplifi-logo.svg" style="max-width:71px;"/>
+					<div class="pricing">
+						<span class="full-price hidden-price" data-qkn-sku="170313" data-qkn-type="originalPrice">$5.99</span>
+						<span class="new-price price">
+							<span class="dollars" data-qkn-sku="170313" data-qkn-type="price_dollars">$3</span>
+							<span class="cents" data-qkn-sku="170313" data-qkn-type="price_cents">99</span>
+						</span>
+		                <span class="suffix">/mo<sup>1</sup></span>
+					</div>
+				</div>
+			</div>
+			<div class="cta simplifi" onclick="location.href='https://stage.quicken.com/shoppingcart?addproduct=170313&icid=202302|blog|simplifi|bce'" style="min-width:109px">
+				Buy Now
+			</div>
+			<p class="billed"><sup>1</sup>Billed annually</p>
+		</div>
+	</div>
+</div>
