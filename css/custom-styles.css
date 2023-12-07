@@ -37,6 +37,10 @@
 	background-color:#333;
 }
 
+a.link-muted {
+  color: #6c757d;
+}
+
 .hero-subline {
 	line-height: 2rem;
 	padding-top: 1rem;
@@ -164,6 +168,17 @@ color: #333;
 	color:#5F888C;
 }
 
+@media screen and (max-width: 566px) {
+	.hide-mobile {
+		display:none;
+	}
+}
+@media screen and (min-width: 567px) {
+	.hide-mobile {
+		display:inline;
+	}
+}
+
 
 
 /*.personal-item {
@@ -236,7 +251,7 @@ color: #333;
 /* Light Background Link Colors */
 /* Dark Background Link Colors */
 /*********** ANIMATIONS *************/
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 991px) {
 	h1.name-line span#name-line-1.anim {
 		animation: ltbgAnimMobile 0.5s infinite;
 	}
@@ -244,6 +259,7 @@ color: #333;
 		animation: ltbgAnimMobile 0.5s infinite;
 	}
 }
+
 
 .hover-target:hover>.ltbg-link,
 .hover-target:hover>a.portfolio-item>div.caption>div.caption-content>div.ltbg-link,
