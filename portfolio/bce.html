@@ -286,7 +286,7 @@
                         </a>
                     </li>
                 </ul>
-                <p class="text-muted small mb-0">Copyright &copy; <b><a class="yellow-overline ltbg-link link-muted" href="https://melaniepanem.com" target="_self">Melanie Panem</a></b> 2023</p>
+                <p class="text-muted small mb-0">Copyright &copy; <b><a class="yellow-overline ltbg-link link-muted" href="https://melaniepanem.com" target="_self">Melanie Panem</a></b> <span id="year">2024</span></p>
             </div>
         </footer>
         <!-- custom JS-->
@@ -303,5 +303,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="../js/scripts.js"></script>
+        <!-- Current year copyright -->
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </body>
 </html>
