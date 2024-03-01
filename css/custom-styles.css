@@ -394,6 +394,10 @@ span.ltbg-anim:hover {
 		color: #212529;
 	}
 }
+/* removing text cursor from hero headlines */
+.name-line, .hero-subline, .hero-subline-2 {
+	cursor: default;
+}
 
 /*********** Mobile Links ***********/
 /* mobile name line animates without user interaction */
@@ -411,9 +415,7 @@ span.ltbg-anim:hover {
 
 /********** Desktop Links ***********/
 @media screen and (min-width: 992px) {
-	.name-line, .hero-subline, .hero-subline-2 {
-		cursor: default;
-	}
+	
   /* desktop has link colors animate and transition randomly on hover */
   @	keyframes ltbgAnimPink {
 		0% {
