@@ -172,10 +172,16 @@ color: #333;
 	.hide-mobile {
 		display:none;
 	}
+	.hide-desktop {
+		display:inline;
+	}
 }
 @media screen and (min-width: 567px) {
 	.hide-mobile {
 		display:inline;
+	}
+	.hide-desktop {
+		display:none;
 	}
 }
 
